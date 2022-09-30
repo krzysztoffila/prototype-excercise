@@ -14,6 +14,8 @@ function Vehicle(name, color) {
     car.name = name;
     car.color = color;
     car.engineStatus = 'off';
+    car.startEngine = vehicleActions.startEngine;
+    car.stopEngine = vehicleActions.startEngine;
 
     return car;
 }
