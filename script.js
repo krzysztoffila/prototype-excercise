@@ -12,7 +12,7 @@ function Vehicle(name, color) {
         this.engineStatus = 'off';
         console.log(`Engine of a ${this.name} is ${this.engineStatus}`);
     }
+    return car;
 }
-
-console.log(car.engineStatus);
-car.stopEngine();
+const car1 = Vehicle('Mustang', 'red');
+console.log(car1); // bez returna mamy undefined
