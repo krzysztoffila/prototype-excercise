@@ -1,7 +1,7 @@
-function Vehicle() {
+function Vehicle(name, color) {
     const car = {};
-    car.name = 'Mustang';
-    car.color = 'red';
+    car.name = name;
+    car.color = color;
     car.engineStatus = 'off';
     //bedziemy operować na metodach starEngine, stopEngine
     car.startEngine = function () {
