@@ -1,3 +1,6 @@
+// prototypem nazywamy obiekt ktory posiada kazda funkcja w JS i ten obiekt
+// wykorzytywany jest po to aby dodawac wlasciwosci ktore beda dostepne w kazdej instancji tej funkcji.
+
 function Vehicle(name, color) {
     const car = Object.create(Vehicle.prototype);
     car.name = name;
