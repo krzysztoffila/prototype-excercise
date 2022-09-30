@@ -1,5 +1,5 @@
 function Vehicle(name, color) {
-    const car = Object.create(vehicleActions);
+    const car = Object.create(Vehicle.prototype);
     car.name = name;
     car.color = color;
     car.engineStatus = 'off';
