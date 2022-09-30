@@ -10,12 +10,10 @@ const vehicleActions = {
 }
 
 function Vehicle(name, color) {
-    const car = {};
+    const car = Object.create(vehicleActions);
     car.name = name;
     car.color = color;
     car.engineStatus = 'off';
-    car.startEngine = vehicleActions.startEngine;
-    car.stopEngine = vehicleActions.startEngine;
 
     return car;
 }
